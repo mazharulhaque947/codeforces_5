@@ -1,0 +1,20 @@
+
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+
+    int t,n,i,j,k,l;
+    cin>>t;
+    while(t--){
+
+
+
+
+
+    }
+
+    return 0;
+}
