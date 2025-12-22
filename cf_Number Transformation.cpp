@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 
-using namesppace std;
+using namespace std;
 
 int main()
 {
