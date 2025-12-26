@@ -7,7 +7,8 @@ int so(int a[],int n)
     int t=1,b[n];
     for(int i=0;i<n;i++){b[i]=a[i];}
     sort(b,b+n);
-    for(int i=0;i<n;i++){ cout<<a[i]<<" "<<b[i]<<"\n"; if(a[i]!=b[i]){t=0;} }
+    for(int i=0;i<n;i++){// cout<<a[i]<<" "<<b[i]<<"\n";
+     if(a[i]!=b[i]){t=0;} }
     return t;
 }
 
