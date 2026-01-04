@@ -17,7 +17,7 @@ int main()
         if(b==y){break;}
 
         a++; if(a==n+1){a=1;}
-        b--; if(b==-1){b=n;}
+        b--; if(b==0){b=n;}
 
         k++;
         if(k>1000){break;}
