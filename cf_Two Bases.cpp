@@ -23,7 +23,7 @@ while(n--){  cin>>c;y=y+c*pp(n,b)   ; }
 //cout<<x<<" "<<y<<"\n";
 if(x==y){cout<<"=\n";   }
 else if(x>y){ cout<<">\n";   }
-else{ cout<<">\n";  }
+else{ cout<<"<\n";  }
 
 return 0;
 }
