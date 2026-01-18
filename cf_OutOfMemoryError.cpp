@@ -11,7 +11,7 @@ while(t--){
   for(i=0;i<m;i++){cin>>b>>c;
     if(u==s[b-1][1]){s[b-1][0]+=c;}
     else{s[b-1][0]=c;s[b-1][1]=u;}
-    if(s[b-1][0]+a[i]>h){u++;s[b-1][0]=0;s[b-1][1]=u;}
+    if(s[b-1][0]+a[b-1]>h){u++;s[b-1][0]=0;s[b-1][1]=u;}
     }
   for(i=0;i<n;i++){if(u==s[i][1]){cout<<a[i]+s[i][0]<<" ";} else{cout<<a[i]<<" ";} }cout<<"\n";
 }
