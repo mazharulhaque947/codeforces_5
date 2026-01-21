@@ -8,7 +8,8 @@ int main()
     cin>>t;
     while(t--){
     cin>>n>>k;
-    if(k==1||n==k){ for(i=0;i<n;i++){cout<<"1 ";} }
+    if(n==k){ for(i=0;i<n;i++){cout<<"1 ";} }
+    else if(k==1){ for(i=0;i<n;i++){cout<<i+1<<" ";}  }
     else{cout<<"-1";}
     cout<<"\n";
     }
