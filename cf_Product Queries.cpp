@@ -11,7 +11,7 @@ for(i=0;i<m;i++){ p[i]=0; }
 p[0]=0;
 n=sqrt(m);
 for(i=1;i<=n;i++){ if(p[i]==0){ for(j=(i+1)*(i+1);j<=m;j=j+i+1){  p[j-1]=1; }} }
-for(i=0;i<m;i++){ cout<<i+1<<" "<<p[i]<<"\n"; }
+//for(i=0;i<m;i++){ cout<<i+1<<" "<<p[i]<<"\n"; }
 cin>>t;
 
 while(t--){
