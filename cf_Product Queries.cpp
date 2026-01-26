@@ -20,8 +20,8 @@ while(t--){
   for(i=0;i<n;i++){ cin>>a[i]; c[a[i]-1]=1; }
 
   for(i=0;i<n;i++){
-
-     if(p[i]==0){ if(c[i]==1){d[i]=1;}else{ d[i]=-1; } }
+     if(c[i]!=-1){d[i]=1;}
+     else if(p[i]==0){ if(c[i]==1){d[i]=1;}else{ d[i]=-1; } }
      else{
 
        k=sqrt(i+1);
