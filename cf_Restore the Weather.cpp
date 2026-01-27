@@ -1,3 +1,4 @@
+// v2
 #include<bits/stdc++.h>
 
 using namespace std;
@@ -22,7 +23,7 @@ return m;
 }
 int main()
 {
-    int a[100],b[100],c[100],d[100],i,j,k,l,m,n,t,o,p;
+    int a[100],b[100],c[100],d[100],i,j,k,l,m,n,t,o,p,g[100],h[100];
     cin>>t;
 
     while(t--){
@@ -31,7 +32,14 @@ int main()
         for(i=0;i<n;i++){cin>>b[i];}
         sort(d,d+n);
         sort(b,b+n);
+        l=0;
+        o=0;
+        for(i=0;i<n;i++){
+            if(d[i]!=d[o]){ g[l]=d[o];h[l]=o;l++;o=i;}
+            if(i==n-1){  g[l]=d[o];h[l]=o;l++; }
+        }
 
+         /*
         for(i=0;i<n;i++){
 
             o=p=bp(d,n,a[i]);
@@ -42,6 +50,13 @@ int main()
                 o--;
                 p++;
             }
+
+        }
+        */
+
+        for(i=0;i<n;i++){
+
+            cout<<b[ h[ bp(g,l,a[i]) ] ]<<" "; h[  bp(g,l,a[i])]++;
 
         }
 
