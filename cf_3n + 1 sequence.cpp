@@ -2,7 +2,7 @@
 using namespace std;
 int l;
 
-int cc(int n){
+void cc(int n){
     l++;
 if(n!=1){ if(n%2==0){n=n/2;} else{ n=n*3+1; } cc(n); }
 }
