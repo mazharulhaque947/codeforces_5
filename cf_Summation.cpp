@@ -4,6 +4,7 @@ using namespace std;
 int ad(int a[],int n, int i){
 
    if(i<n){ return a[i]+ad(a,n,i+1); }
+   else{ return 0;}
 }
 
 int main()
