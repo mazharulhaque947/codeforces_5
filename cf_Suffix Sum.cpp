@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+#define int long long
 using namespace std;
 int ss(int a[],int n,int m,int i){
     int v;
@@ -11,7 +11,7 @@ if(i+1<n){
 }
 else{ return v;}
 }
-int main()
+int32_t main()
 {
     int a[100],i,j,k,m,n;
 
