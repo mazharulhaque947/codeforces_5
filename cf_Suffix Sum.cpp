@@ -4,11 +4,12 @@ using namespace std;
 int ss(int a[],int n,int m,int i){
     int v;
     v=a[i];
-
+    if(i<n-m){ v=0; }
 if(i+1<n){
- if(i<n-m){ v=0; }
+
  return v+ss(a,n,m,i+1);
 }
+else{ return v;}
 }
 int main()
 {
