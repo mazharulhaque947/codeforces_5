@@ -16,7 +16,7 @@ int main()
 
     for(i=0;i<n;i++){cin>>a[i];}
 
-    if(pm(a,n,0,x,0)==1){cout<<"YES\n";}
+    if(pm(a,n,1,x,a[0])==1){cout<<"YES\n";}
     else{cout<<"NO\n";}
 
     return 0;
