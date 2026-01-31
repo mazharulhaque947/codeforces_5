@@ -4,16 +4,18 @@ using namespace std;
 int vv(int a[10][10],int n,int m, int i, int j)
 {
     int u,v;
-    u=v=a[i][j];
-
-    if(i+1<n&&j<m){
-      u=u+vv(a,n,m,i+1,j);
+    //u=v=a[i][j];
+    u=v=0;
+     if(i==n-1&&j==n-1){ return a[i][j];}
+    if(i+1<n){
+      u=vv(a,n,m,i+1,j);
     }
-    if(j+1<m&&i<n){
-      v=v+vv(a,n,m,i,j+1);
+    if(j+1<m){
+      v=vv(a,n,m,i,j+1);
 
     }
-    return max(u,v);
+    if(v>u){u=v;}
+    return a[i][j]+u;
 }
 int main()
 {
