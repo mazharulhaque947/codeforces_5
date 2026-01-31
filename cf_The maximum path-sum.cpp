@@ -5,7 +5,7 @@ int vv(int a[10][10],int n,int m, int i, int j)
 {
     int u,v;
     //u=v=a[i][j];
-    u=v=0;
+    u=v=-9999999;
      if(i==n-1&&j==m-1){ return a[i][j];}
     if(i+1<n){
       u=vv(a,n,m,i+1,j);
