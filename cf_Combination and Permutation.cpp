@@ -7,18 +7,18 @@ int f(int n){
  return n*f(n-1);
 
 }
-int main()
+int32_t main()
 {
     int a[31],b[31],i,j,k,l,m,n;
     cin>>n>>m;
     k=-1;
-    for(i=0;i<n;i++){
+    for(i=0;i<=n;i++){
 
         a[0]=1;
         a[i]=1;
         for(j=1;j<i;j++){a[j]=b[j]+b[j-1]; }
 
-       for(j=0;j<=i;j++){ if(i+1==n&&j==m){ k=a[j];break; } b[j]=a[j];}
+       for(j=0;j<=i;j++){ if(i==n&&j==m){ k=a[j];break; } b[j]=a[j];}
 
 
        if(k!=-1){break;}
