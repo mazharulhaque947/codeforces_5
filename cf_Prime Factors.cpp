@@ -37,7 +37,7 @@ int32_t main()
     k=0;
     cin>>n;
 
-    if(ip(a,m,n)==1){ k++; c[0]=n;d[0]=1; }
+    if(ip(a,m,n)==1||n==1){ k++; c[0]=n;d[0]=1; }
     else{
        o=0;
        j=0;
