@@ -8,8 +8,8 @@ int main()
     m=1;
     while( (n&m)==0){m=m<<1;l++;}
    // cout<<l<<"\n";
-    cout<<(1<<l)<<"\n";
-   // if(1<<l==n){cout<<"YES\n";}
+   // cout<<(1<<l)<<"\n";
+    if(1<<l==n){cout<<"YES\n";}
     else{ cout<<"NO\n"; }
 
     return 0;
