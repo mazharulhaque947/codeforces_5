@@ -4,7 +4,7 @@ using namespace std;
 
 
 
-int main()
+int32_t main()
 {
     int a,b,c,d,g,h,i,j;
    // cin>>a>>b;
