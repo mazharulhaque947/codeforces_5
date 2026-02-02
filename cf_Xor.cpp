@@ -11,10 +11,10 @@ int32_t main()
     cin>>a>>b>>s;
 
     l=0;
-    if(s%3==0){l=a^b;}
-    else if(s%2==0){l=b;}
-    else{l=a;}
-    cout<<l<<"\n";
+    if(s%3==0){cout<<a^b;}
+    else if(s%2==0){cout<<b;}
+    else{cout<<a;}
+
     return 0;
 }
 
