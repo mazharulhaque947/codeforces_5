@@ -12,7 +12,7 @@ int32_t main()
 
     l=0;
     if(s%3==0){cout<<(a^b);}
-    else if(s%2==0){cout<<b;}
+    else if(s%3==2){cout<<b;}
     else{cout<<a;}
 
     return 0;
