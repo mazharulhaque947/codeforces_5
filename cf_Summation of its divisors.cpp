@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+#define int lng long
 using namespace std;
 
 
