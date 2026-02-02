@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 #define int long long
 using namespace std;
-int main()
+int32_t main()
 {
     int n,i,j,k,l,m;
     cin>>n;
