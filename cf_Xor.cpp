@@ -11,7 +11,7 @@ int32_t main()
     cin>>a>>b>>s;
 
     l=0;
-    if(s%3==0){cout<<a^b;}
+    if(s%3==0){cout<<(a^b);}
     else if(s%2==0){cout<<b;}
     else{cout<<a;}
 
