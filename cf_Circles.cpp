@@ -28,7 +28,7 @@ int main()
    cin>>a>>b>>c>>d;
     cin>>g>>h>>i>>j;
 
-    if( o(l(a,b,c,d))+o(l(g,h,i,j))>=l( m(a,c),m(b,d),m(g,i),m(j,j) ) ){cout<<"YES\n";}
+    if( o(l(a,b,c,d))+o(l(g,h,i,j))>=l( m(a,c),m(b,d),m(g,i),m(h,j) ) ){cout<<"YES\n";}
     else{ cout<<"NO\n"; }
     return 0;
 }
