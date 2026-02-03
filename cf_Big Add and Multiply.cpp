@@ -11,7 +11,7 @@ void q(string& a,int n){
 */
 
 int ss(string &a,string &b,int n,int m)
-{    //cout<<"ssssssss       "<<n<<m<<" "<<a<<"\n"<<b<<"\n";
+{ //   cout<<"ssssssss       "<<n<<m<<" "<<a<<"\n"<<b<<"\n";
     int r,c,d,i,u,v;
     r=n;
     if(m>n){r=m;}
@@ -41,17 +41,17 @@ int mm(string &a,string &b,int n,int v){
 
     for(i=0;i<n;i++){
         //cout<<a[i]<<" "<<b[i]<<"\n";
-        u=a[i]-48;
-
+        u=a[i]-'0';
+        //cout<<u<<"  "<<i<<" "<<n<<"\n";
       //  cout<<a<<"\n"<<b<<"\n";
         d=u*9+c;
         c=d/10;
         d=d%10;
-       // cout<<c<<" "<<d<<"\n";
+  //cout<<c<<" "<<d<<"\n";
         b[i+v]=d+48;
     }
-    if(c!=0){b[i+v]=c+48; n++;}
-  // for(i=0;i<n+v;i++){cout<<b[i]<<" ";}cout<<"\n";
+    if(c!=0){b[i+v]=c+48; n=n+1;}
+ //  for(i=0;i<n+v;i++){cout<<b[i]<<" ";}cout<<"\n";
     return n+v;
 }
 
@@ -59,15 +59,15 @@ int  mmm(string &a,string &b,string &c,string &d,string &f,int aa[4]){
 
     int i,j,n,m;
 
-  //cout<<a<<"\n"<<b<<"\n"<<c<<"\n"<<d<<"\n"<<f<<"\n";
+ // cout<<a<<"\n"<<b<<"\n"<<c<<"\n"<<d<<"\n"<<f<<"\n";
         aa[0]=mm(a,b,aa[0],0);
-  //      cout<<a<<"\n"<<b<<"\n"<<c<<"\n"<<d<<"\n"<<f<<"\n";
+   //    cout<<a<<"\n"<<b<<"\n"<<c<<"\n"<<d<<"\n"<<f<<"\n";
          aa[1]=mm(a,c,aa[1],1);
-    //     cout<<a<<"\n"<<b<<"\n"<<c<<"\n"<<d<<"\n"<<f<<"\n";
+     //    cout<<a<<"\n"<<b<<"\n"<<c<<"\n"<<d<<"\n"<<f<<"\n";
           aa[2]=mm(a,d,aa[2],2);
-      //    cout<<a<<"\n"<<b<<"\n"<<c<<"\n"<<d<<"\n"<<f<<"\n";
+       //  cout<<a<<"\n"<<b<<"\n"<<c<<"\n"<<d<<"\n"<<f<<"\n";
            aa[3]=mm(a,f,aa[3],3);
-        //   cout<<a<<"\n"<<b<<"\n"<<c<<"\n"<<d<<"\n"<<f<<"\n";
+         //  cout<<a<<"\n"<<b<<"\n"<<c<<"\n"<<d<<"\n"<<f<<"\n";
 
 
 
@@ -86,12 +86,13 @@ int32_t main()
     //a[0]="rrrrB";
    // for(i=0;i<5;i++){a[0][i]='6';} a[0][i]='\0';
 
-   a[0]=a[1]=a[2]=a[3]=a[4]=a[5]=string(1009,'0');
+   a[0]=a[1]=a[2]=a[3]=a[4]=a[5]=string(109,'0');  //  increase the string size to 10009
    cin>>a[6];
   a[7]="9999";
    n=a[6].size();
    m=a[7].size();
-   for(i=0;i<n;i++){b[i]=n;}
+  // cout<<n<<" "<<m<<"\n";
+   for(i=0;i<4;i++){b[i]=n;}
    reverse(a[6].begin(),a[6].end());
   // reverse(a[7].begin(),a[7].end());
 
@@ -101,7 +102,7 @@ int32_t main()
    for(i=m-1;i>=0;i--){ cout<<a[1][i];  }cout<<" \n";
 
    m=mmm(a[0],a[2],a[3],a[4],a[5],b);
-  //cout<<m<<"\n";
+ // cout<<m<<"\n";
     for(i=m-1;i>=0;i--){ cout<<a[5][i];  }cout<<" \n";
 
     return 0;
