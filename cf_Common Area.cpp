@@ -20,8 +20,8 @@ int main()
                               if(d[i]<d[q[3]]){q[3]=i;}}
        o=c[q[2]]-a[q[0]];
        p=d[q[3]]-b[q[1]];
-       if(o>0&&p>0){ cout<<"case #"<<m-t<<": "<<o*p<<"\n"; }
-       else{ cout<<"case #"<<m-t<<": "<<0<<"\n"; }
+       if(o>0&&p>0){ cout<<"Case #"<<m-t<<": "<<o*p<<"\n"; }
+       else{ cout<<"Case #"<<m-t<<": "<<0<<"\n"; }
     }
 
 
