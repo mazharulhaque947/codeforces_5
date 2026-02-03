@@ -4,8 +4,8 @@ using namespace std;
 
 int main()
 {
-    int a,b,i,n,p,t,q[4];
-    float o,m;
+    long long a,b,i,n,p,t,q[4];
+    double o,m;
        cin>>a;
        m=0;
        for(i=1;i<=a;i++){ o=0; o=log10(i); m+=o; }
