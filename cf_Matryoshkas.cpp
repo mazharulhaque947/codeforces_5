@@ -1,9 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int f(int a[],int b[],int n,int l,int k,int v)
+int f(int a[],int b[],int c[],int n,int l,int k,int v)
 {
-    int c[400],i,j,u,o,m,s,p;
+    int i,j,u,o,m,s,p;
 
     s=0;
     p=b[l]-1;
@@ -31,7 +31,7 @@ int f(int a[],int b[],int n,int l,int k,int v)
 
     for(i=0;i<s;i++){
 
-         p=p+f(a,b,n,c[2*i],c[2*i+1],v+1);
+         p=p+f(a,b,c,n,c[2*i],c[2*i+1],v+1);
 
     }
 
@@ -41,7 +41,7 @@ int f(int a[],int b[],int n,int l,int k,int v)
 
 int main()
 {
-    int a[200],b[200],c[200],i,j,k,t,o,p,m,n;
+    int a[200],b[200],c[200],d[400],i,j,k,t,o,p,m,n;
     cin>>t;
 
     while(t--)
@@ -61,7 +61,7 @@ int main()
         if(i==n-1){a[o]=m;b[o]=p;o++;}
        }
      // for(i=0;i<o;i++){cout<<a[i]<<" "<<b[i]<<"\n";}
-       k=f(a,b,o,0,o-1,0);
+       k=f(a,b,d,o,0,o-1,0);
        cout<<k<<"\n";
 
 
