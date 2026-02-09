@@ -26,7 +26,7 @@ o=100000;
         else{
            v=sqrt(k);
            l=-1;
-           for(i=2;i<=v;i++){ if(m[i]==0&&k%i==0){ l=i; break; } }
+           for(i=2;i<=v;i++){ if(m[i]==0&&k%i==0){ l=i; } }
            if(l==-1){  cout<<1<<" "<<i-1<<"\n"; }
            else{
 
