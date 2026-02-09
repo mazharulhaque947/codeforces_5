@@ -26,11 +26,11 @@ o=100000;
         else{
            v=sqrt(k);
            l=-1;
-           for(i=2;i<=v;i++){ if(m[i]==0&&k%i==0){ l=i; } }
-           if(l==-1){  cout<<1<<" "<<i-1<<"\n"; }
+           for(i=2;i<=v;i++){ if(m[i]==0&&k%i==0){ l=i; break;} }
+           if(l==-1){  cout<<1<<" "<<k-1<<"\n"; }
            else{
 
-              cout<<k/i<<" "<<(k/i)*(i-1)<<"\n";
+              cout<<k/l<<" "<<(k/l)*(l-1)<<"\n";
            }
 
 
