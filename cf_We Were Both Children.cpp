@@ -1,4 +1,3 @@
-
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -16,14 +15,18 @@ if(a[i]==1){  o=1; }
  if(a[i]<=m){ c[a[i]-1]++; } }
 p=0;
 for(i=2;i<=m;i++){
+if(c[i-1]>0)
+{
 for(j=i;j<=m;j+=i){
 if(c[j-1]>0){  d[j-1]=d[j-1]+c[i-1];
 if(d[j-1]>d[p]){p=j-1;} }
 }
 }
+}
 
-
-cout<<p+1<<"\n";
+if(o==1){ o=c[0]; }
+o+=d[p];
+cout<<o<<"\n";
 
 }
 return 0;
