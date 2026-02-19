@@ -39,6 +39,7 @@ int main()
 
             if(n>3){ k=2+(n-4)/3; }
             else { k=1; }
+            k=k+u;
         }
         else{
 
@@ -49,9 +50,9 @@ int main()
             else { k=k+1; }  }
 
             for(i=l;i<m-r;i++){  k=k+(b[i])/3; }
-
+            k=k+u;
         }
-        cout<<k+u<<"\n";
+        cout<<k<<"\n";
 
     }
 
