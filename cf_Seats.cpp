@@ -36,9 +36,10 @@ int main()
         u=n-u;
         k=0;
         if(v==1){
-
+            if(l==1){
             if(n>3){ k=2+(n-4)/3; }
             else { k=1; }
+            }
             k=k+u;
         }
         else{
