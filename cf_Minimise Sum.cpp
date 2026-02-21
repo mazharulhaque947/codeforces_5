@@ -8,9 +8,9 @@ int main()
        std::cin>>n;
        m=0;
        k=0;
-
-       for(i=0;i<n;i++){ std::cin>>a[i]; if(a[i]<a[k]){ k=i; } m=m+a[k];b[i]=m; }
-
+       l=0;
+       for(i=0;i<n;i++){ std::cin>>a[i]; if(a[i]<a[k]){ k=i; } m=m+a[k];l=l+m;b[i]=l; }
+       if( a[0]+a[1]<m ){m=a[0]+a[1];}
        for(i=1;i<n;i++){  if() }
        std::cout<<m<<"\n";
     }
