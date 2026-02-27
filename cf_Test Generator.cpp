@@ -40,12 +40,12 @@ int32_t main()
         k=m/n;
         z=k;
         if(k*n==m){ k=0;  }
-        else if(k==0){ k=m; z++; }
+       // else if(k==0){ k=m; z++; }
         else{ k=n*k-m;
                k=k+n; z++;}
 
 
-       // cout<<k<<" diff \n";
+        cout<<k<<" diff \n";
         q=bb(k,b,o);
        // cout<<m<<" "<<n<<"\n";
         bb(n,a,o);

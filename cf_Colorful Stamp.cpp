@@ -25,7 +25,7 @@ int main()
 
             if(a[i]!='W'){if(k==-1){ k=i; } o++;}
             else{ if(k!=-1){  p[l]=k; q[l]=o; l++; } k=-1; o=0; }
-
+            if(i==n-1&&k!=-1){ p[l]=k; q[l]=o; l++;  }
             if(a[i]=='R'){ u++; }
             else if(a[i]=='B'){ v++; }
             r[i]=u;
