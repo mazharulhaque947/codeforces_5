@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int iii(int a[],int aa[],int o,int l)
-{    cout<<o<<"\n";
+{   // cout<<o<<"\n";
     int i,j,k,m,n;
     m=0;
     for(i=1;i<=l;i++){ if(a[i]>=o){ break; } }
