@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int iii(int a[],int aa[],int o,int l)
-{    //cout<<o<<"\n";
+{    cout<<o<<"\n";
     int i,j,k,m,n;
     m=0;
     for(i=1;i<=l;i++){ if(a[i]>=o){ break; } }
@@ -46,7 +46,7 @@ int main()
      jj=0;
      while(j<ppp){ if(k>m){ if(k%pp[j]==0){ if( iii(a,aa,pp[j],l)==1 ){ q[jj]=pp[j]*q[jj];} k=k/pp[j]; }else{ j++; } }
 
-        else{  if(k==1){ break; } else if(p[k-1]==0){ if( iii(a,aa,k,l)==1 ){ q[0]=k*q[0];} k=1; break; }
+        else{  if(k==1){ break; } else if(p[k-1]==0){ if( iii(a,aa,k,l)==1 ){ q[jj]=k*q[jj];} k=1; break; }
         else{ if( iii(a,aa,p[k-1],l)==1 ){ q[jj]=p[k-1]*q[jj];} k=k/p[k-1];  }   }
         if(k==1){break;} }
         if(k!=1){ if( iii(a,aa,k,l)==1 ){ q[jj]=k*q[jj];} }
@@ -58,7 +58,7 @@ int main()
       jj=1;
        while(j<ppp){ if(k>m){ if(k%pp[j]==0){ if( iii(a,aa,pp[j],l)==1 ){ q[jj]=pp[j]*q[jj];} k=k/pp[j]; }else{ j++; } }
 
-        else{  if(k==1){ break; } else if(p[k-1]==0){ if( iii(a,aa,k,l)==1 ){ q[0]=k*q[0];} k=1; break; }
+        else{  if(k==1){ break; } else if(p[k-1]==0){ if( iii(a,aa,k,l)==1 ){ q[jj]=k*q[jj];} k=1; break; }
         else{ if( iii(a,aa,p[k-1],l)==1 ){ q[jj]=p[k-1]*q[jj];} k=k/p[k-1];  }   }
         if(k==1){break;} }
         if(k!=1){ if( iii(a,aa,k,l)==1 ){ q[jj]=k*q[jj];} }
@@ -72,7 +72,7 @@ int main()
 
        while(j<ppp){ if(k>m){ if(k%pp[j]==0){ if( iii(a,aa,pp[j],l)==1 ){ q[jj]=pp[j]*q[jj];} k=k/pp[j]; }else{ j++; } }
 
-        else{  if(k==1){ break; } else if(p[k-1]==0){ if( iii(a,aa,k,l)==1 ){ q[0]=k*q[0];} k=1; break; }
+        else{  if(k==1){ break; } else if(p[k-1]==0){ if( iii(a,aa,k,l)==1 ){ q[jj]=k*q[jj];} k=1; break; }
         else{ if( iii(a,aa,p[k-1],l)==1 ){ q[jj]=p[k-1]*q[jj];} k=k/p[k-1];  }   }
         if(k==1){break;} }
         if(k!=1){ if( iii(a,aa,k,l)==1 ){ q[jj]=k*q[jj];} }
