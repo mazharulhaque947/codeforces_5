@@ -28,7 +28,7 @@ int main()
         for(i=0;i<102;i++){ a[i]=mm(b,n,i); }
 
        k=0;
-       for(i=0;i<102;i++){ if(a[i]<a[k]){k=i;} }
+       for(i=0;i<102;i++){ if(a[i]<=a[k]){k=i;} }
         cout<<k<<" "<<a[k]<<"\n";
     //}
 
