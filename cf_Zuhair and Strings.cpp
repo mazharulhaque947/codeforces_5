@@ -6,9 +6,9 @@ int main()
     int c[26][200],i,j,k,m,n,l,o,p,t;
     string a;
 
-    cin>>t;
-    while(t--)
-    {
+   // cin>>t;
+    //while(t--)
+    //{
        cin>>n>>k;
        cin>>a;
        for(i=0;i<26;i++){c[i][0]=0;}
@@ -36,7 +36,7 @@ int main()
           }
           if(o>p){p=o;}
 
-       }
+      // }
 
         cout<<p<<"\n";
     }
