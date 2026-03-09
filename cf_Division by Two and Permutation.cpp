@@ -9,7 +9,7 @@ int main()
     while(t--)
     {
         cin>>n;
-        for(i=0;i<n;i++){ cin>>m; a[i][0]=m; l=0; while(m>=1){ a[i][l+2]=m; m=m/2;  l++; } a[i][1]=l; }
+        for(i=0;i<n;i++){ cin>>m; a[i][0]=m; l=0; while(m>=1){ if(m<=50){a[i][l+2]=m;   l++; } m=m/2;} a[i][1]=l; }
          //for(i=0;i<n;i++){ for(j=0;j<a[i][1];j++){ cout<<a[i][j+2]<<" "; } cout<<"\n"; }
         k=0;
 
