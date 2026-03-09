@@ -20,7 +20,10 @@ int main()
             for(i=0;i<n;i++){ b[i]=0; }
 
             for(i=0;i<n;i++){ //cout<<c[i]<<" ";
-            b[a[i][2+c[i]]-1]++; } //cout<<"\n";
+                    if(a[i][2+c[i]]<=50){
+            b[a[i][2+c[i]]-1]++;
+            }
+             } //cout<<"\n";
             m=1;
             for(i=0;i<n;i++){if(b[i]==0){ m=0; }}
            if(m==1){k=1; break;}
