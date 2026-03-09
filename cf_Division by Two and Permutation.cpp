@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
 
-    int a[50][12],i,j,k,l,m,n,t,b[50],c[50];
+    int a[50][12],i,j,o,k,l,m,n,t,b[50],c[50];
     cin>>t;
     while(t--)
     {
@@ -16,14 +16,21 @@ int main()
         for(i=0;i<n;i++){ c[i]=0; }
 
         while(c[0]!=a[0][1]){
-
+           o=0;
             for(i=0;i<n;i++){ b[i]=0; }
 
             for(i=0;i<n;i++){ //cout<<c[i]<<" ";
                     if(a[i][2+c[i]]<=50){
             b[a[i][2+c[i]]-1]++;
             }
-             } //cout<<"\n";
+             else{
+                o=1; break;
+
+             }
+             }
+           //  if(o==1){break;}
+            //cout<<"\n";
+
             m=1;
             for(i=0;i<n;i++){if(b[i]==0){ m=0; }}
            if(m==1){k=1; break;}
