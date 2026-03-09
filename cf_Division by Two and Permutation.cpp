@@ -13,6 +13,27 @@ int main()
          //for(i=0;i<n;i++){ for(j=0;j<a[i][1];j++){ cout<<a[i][j+2]<<" "; } cout<<"\n"; }
         k=0;
 
+
+          o=0;
+            for(i=0;i<n;i++){ b[i]=0; }
+
+            for(i=0;i<n;i++){ //cout<<c[i]<<" ";
+                    for(j=0;j<a[i][1];j++){
+
+            b[a[i][2+j]-1]++;
+
+
+             }
+             }
+           //  if(o==1){break;}
+            //cout<<"\n";
+
+            m=1;
+            for(i=0;i<n;i++){if(b[i]==0){ m=0; }}
+
+            if(m==0){}
+else{
+
         for(i=0;i<n;i++){ c[i]=0; }
 
         while(c[0]!=a[0][1]){
@@ -38,7 +59,7 @@ int main()
            for(i=n-2;i>=0;i--){ if(c[i+1]>=a[i+1][1]){ c[i+1]=0; c[i]++; } }
 
         }
-
+}
         if(k==1){cout<<"YES\n";}
         else{ cout<<"NO\n"; }
 
