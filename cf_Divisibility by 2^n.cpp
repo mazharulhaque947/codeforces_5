@@ -19,7 +19,7 @@ int main()
     m=100;
     for(i=1;i<=m;i++){ a[i-1]=cc(i); }
 
-    for(i=1;i<=m;i++){ cout<<i<<" "<<a[i-1]<<"\n";}
+   // for(i=1;i<=m;i++){ cout<<i<<" "<<a[i-1]<<"\n";}
     cin>>t;
     while(t--){
         cin>>n;
@@ -29,7 +29,7 @@ int main()
 
         k=n-k;
         cout<<k<<"\n";
-        if(k<=0){ cout<<"0\n"; }
+       // if(k<=0){ cout<<"0\n"; }
         else{
             for(i=0;i<n;i++){ b[i]=a[i]; }
             sort(b,b+n);
