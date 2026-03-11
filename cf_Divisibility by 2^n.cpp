@@ -28,8 +28,8 @@ int main()
         for(i=0;i<n;i++){  cin>>c[i]; if(c[i]<=m){k=k+a[c[i]-1];}else{ k=k+cc(c[i]); } }
 
         k=n-k;
-        cout<<k<<"\n";
-       // if(k<=0){ cout<<"0\n"; }
+       // cout<<k<<"\n";
+        if(k<=0){ cout<<"0\n"; }
         else{
             for(i=0;i<n;i++){ b[i]=a[i]; }
             sort(b,b+n);
