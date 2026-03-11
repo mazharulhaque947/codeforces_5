@@ -17,8 +17,8 @@ int main()
 {
     int a[100],b[100],c[100],i,j,k,m,n,l,t;
     m=100;
-    for(i=1;i<=m;i++){ a[i-1]=b[i-1]=cc(i); }
-    sort(b,b+n);
+    for(i=1;i<=m;i++){ a[i-1]=cc(i); }
+
     for(i=1;i<=m;i++){ cout<<i<<" "<<a[i-1]<<"\n";}
     cin>>t;
     while(t--){
@@ -31,6 +31,8 @@ int main()
         cout<<k<<"\n";
         if(k<=0){ cout<<"0\n"; }
         else{
+            for(i=0;i<n;i++){ b[i]=a[i]; }
+            sort(b,b+n);
 
             for(i=n-1;i>=0;i--){ if(k>0){ k=k-b[i]; l++; }else{ break;} }
             if(k<=0){
