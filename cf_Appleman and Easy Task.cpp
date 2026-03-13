@@ -15,7 +15,7 @@ int main()
         {
 
            l=0;
-           if(a[i][j]=='x'){ if(i>0){ if(a[i-1][j]=='o'){l++;} }
+           if( true ){ if(i>0){ if(a[i-1][j]=='o'){l++;} }
                              if(i<n-1){ if(a[i+1][j]=='o'){l++;} }
                              if(j>0){ if(a[i][j-1]=='o'){l++;} }
                              if(j<n-1){ if(a[i][j+1]=='o'){l++;} }
