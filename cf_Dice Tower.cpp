@@ -9,8 +9,9 @@ int main()
     {
         cin>>n;
         m=n/14;
+        l=m;
         m=n-m*14;
-        if(m<=6){ cout<<"YES\n"; }
+        if(m<=6&&l>0){ cout<<"YES\n"; }
         else{ cout<<"NO\n"; }
 
     }
