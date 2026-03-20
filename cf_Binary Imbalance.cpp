@@ -10,9 +10,11 @@ int main()
         cin>>n;
         cin>>q;
         k=l=0;
-        for(i=0;i<n-1;i++){ if(q[i]=='0'&&q[i+1]=='0'){k++;}else if(q[i]!=q[i+1]){l++;} }
-
-        if(k+l>0){cout<<"YES\n";}
+        m=0;
+        if(q[0]=='0'){m++;}
+        for(i=0;i<n-1;i++){  if(q[i+1]=='0'){m++;} if(q[i]=='0'&&q[i+1]=='0'){k++;}else if(q[i]!=q[i+1]){l++;} }
+       if(m>n-m){ cout<<"YES\n"; }
+       else if(k+l>0){cout<<"YES\n";}
         else{ cout<<"NO\n"; }
 
     }
