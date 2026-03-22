@@ -5,7 +5,7 @@ using namespace std;
 
 int32_t main()
 {
-    int a[100],b[100],c[100],i,j,k,m,n,r,q,o,l,p,t;
+    int a[100],b[100],c[100],i,j,k,m,n,r,q,o,l,p,t,vv;
    // cin>>t;
     //while(t--)
     {
@@ -15,7 +15,7 @@ int32_t main()
         sort(b,b+n);
         c[0]=b[0];
         for(i=1;i<n;i++){ c[i]=b[i]; b[i]=b[i-1]+b[i]; }
-       if(o>1){
+       if(o>1&& false ){
         p=0;
         r=0;
         while(a[0]*m<b[n-1-p]*k){  p++;}
@@ -26,8 +26,8 @@ int32_t main()
 
          p=0;
          r=0;
-         q=0;
-        while(true){ if(p>=n){break;}  if(a[0]*m>=(b[n-1-p]+q)*k){ break; }if(c[n-1-p]==a[0]){ q=a[0]; r=1;} p++;}
+         q=0;vv=0;
+        while(true){ if(p>=n){break;}  if(a[0]*m>=(b[n-1-p]+q)*k){ break; }if(c[n-1-p]==a[0]&&vv==0){ q=a[0]; r=1;vv++;} p++;}
 
           cout<<p-r<<"\n";
 
