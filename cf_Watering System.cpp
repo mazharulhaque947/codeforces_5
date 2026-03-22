@@ -6,8 +6,8 @@ using namespace std;
 int32_t main()
 {
     int a[100],b[100],c[100],i,j,k,m,n,r,q,o,l,p,t;
-    cin>>t;
-    while(t--)
+   // cin>>t;
+    //while(t--)
     {
         cin>>n>>m>>k;
         o=0;
