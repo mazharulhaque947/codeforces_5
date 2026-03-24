@@ -9,8 +9,8 @@ int main()
     for(i=0;i<n;i++){cin>>a[i];}
     sort(a,a+n);
     k=0;
-    for(i=0;i<n-(1-n%2);i++){
-        if(i%2==0){ k=k+a[i]*a[i]; }
+    for(i=0;i<n;i++){
+        if( ((1- n%2) +i%2)%2==0){ k=k+a[i]*a[i]; }
          else{ k=k-a[i]*a[i]; }
 
     }
