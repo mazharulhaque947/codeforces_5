@@ -44,7 +44,8 @@ int main()
             }
 
         }
-        cout<<v<<"\n";
+        if(r=="g"){ cout<<"0\n"; }
+         else{cout<<v<<"\n";}
     }
 
     return 0;
