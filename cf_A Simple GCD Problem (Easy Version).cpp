@@ -29,7 +29,9 @@ int main()
             l=0;
             if(a[0]!=gg(a[0],a[1])){l++; a[0]=gg(a[0],a[1]);}
 
-         for(i=1;i<n-1;i++){ if( gg(a[i],a[i-1])==gg(a[i],a[i+1])&&a[i]!=gg(a[i],a[i-1])){l++; a[i]= gg(a[i],a[i-1]);}  }
+         for(i=1;i<n-1;i++){ if( (gg(a[i],a[i-1])*gg(a[i],a[i+1]))/(gg(gg(a[i],a[i-1]),gg(a[i],a[i+1])))!=a[i]){
+                l++; a[i]= (gg(a[i],a[i-1])*gg(a[i],a[i+1]))/(gg(gg(a[i],a[i-1]),gg(a[i],a[i+1])));
+         }  }
           if(a[n-1]!=gg(a[n-1],a[n-2])){l++;}
        cout<<l<<"\n";
 
