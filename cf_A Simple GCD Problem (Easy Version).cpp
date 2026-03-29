@@ -27,9 +27,10 @@ int main()
         k=a[0];
          for(i=1;i<n;i++){ k=gg(a[i],k); }
             l=0;
-            if(k!=a[0]&&gg(a[0],a[1])==k){l++;}
-             if((a[n-1]!=a[n-2])){l++;}
-         for(i=1;i<n-1;i++){ if(gg(a[i-1],a[i])==gg(a[i],a[i+1])&&k==gg(a[i],a[i+1])&&k!=a[i]){l++;}  }
+            if(k!=a[0]&&gg(a[0],a[1])==k){l++; a[0]=k;}
+
+         for(i=1;i<n-1;i++){ if(gg(a[i-1],a[i])==gg(a[i],a[i+1])&&k==gg(a[i],a[i+1])&&k!=a[i]){l++; a[i]=k;}  }
+          if((a[n-1]!=a[n-2])){l++;}
        cout<<l<<"\n";
 
     }
