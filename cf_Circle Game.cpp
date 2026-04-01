@@ -16,11 +16,11 @@ int main()
             cin>>a[i];
         }
 
-        if(n%2==1){cout<<"M\n";}
+        if(n%2==1){cout<<"Mike\n";}
         else{
             l=1;
             for(i=0;i<n;i+=2){ if(a[i]<=a[i+1]){ l=0; break; } }
-            if(l==0){ cout<<"Mike\n"; }
+            if(l==1){ cout<<"Mike\n"; }
             else{  cout<<"Joe\n"; }
         }
 
