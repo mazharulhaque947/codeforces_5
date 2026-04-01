@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    int a[100],i,j,k,l,t,n,m;
+    int a[100],i,j,k,l,t,n,m,o,p;
 
     cin>>t;
 
@@ -18,10 +18,21 @@ int main()
 
         if(n%2==1){cout<<"Mike\n";}
         else{
-            l=1;
-            for(i=0;i<n;i+=2){ if(a[i]<=a[i+1]){ l=0; break; } }
-            if(l==1){ cout<<"Mike\n"; }
-            else{  cout<<"Joe\n"; }
+            l=0;
+            k=1;
+
+            for(i=0;i<n;i+=2){ if(a[i]<=a[l]){ l=i;  } }
+             for(i=1;i<n;i+=2){ if(a[i]<=a[k]){ k=i;  } }
+
+           if(l<k){
+              if(a[l]<=a[k]){ cout<<"Joe\n"; }
+              else { cout<<"Mike\n"; }
+           }
+           else{
+             if(a[l]<a[k]){ cout<<"Joe\n"; }
+              else { cout<<"Mike\n"; }
+
+           }
         }
 
     }
