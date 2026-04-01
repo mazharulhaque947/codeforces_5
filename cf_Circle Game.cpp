@@ -25,12 +25,16 @@ int main()
              for(i=1;i<n;i+=2){ if(a[i]<=a[k]){ k=i;  } }
 
            if(l<k){
-              if(a[l]<=a[k]){ cout<<"Joe\n"; }
-              else { cout<<"Mike\n"; }
+             // if(a[l]<=a[k]){
+                    cout<<"Joe\n";
+              //}
+             // else { cout<<"Mike\n"; }
            }
            else{
-             if(a[l]<a[k]){ cout<<"Joe\n"; }
-              else { cout<<"Mike\n"; }
+            // if(a[l]<a[k]){
+                    cout<<"Joe\n";
+             //}
+             // else { cout<<"Mike\n"; }
 
            }
         }
