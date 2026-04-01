@@ -11,7 +11,7 @@ int main()
     {
         cin>>n;
         if(n==1){cout<<"-1\n";}
-        else{ l=n%2;  for(i=0;i<n;i++){ cout<<a[ (i+l)%2 ] }  }
+        else{ l=n%2;  for(i=0;i<n;i++){ cout<<a[ (i+l)%2 ]; } cout<<"\n"; }
 
     }
     return 0;
