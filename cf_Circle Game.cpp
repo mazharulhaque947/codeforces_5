@@ -24,7 +24,7 @@ int main()
             for(i=0;i<n;i+=2){ if(a[i]<=a[l]){ l=i;  } }
              for(i=1;i<n;i+=2){ if(a[i]<=a[k]){ k=i;  } }
 
-           if(l<k){
+           if(a[l]<a[k]){
              // if(a[l]<=a[k]){
                     cout<<"Joe\n";
               //}
