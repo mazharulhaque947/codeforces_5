@@ -16,8 +16,8 @@ int main()
         o=o-p;
         b[ n ]=o;
         for(i=0;i<n;i++){  b[ i ]= a[i];  }
-            for(i=0;i<1+n;i++){  cout<<b[i]<<" "; } cout<<"\n";
-         for(i=0;i<n;i++){ cout<<b[ (n-((k-1)%(n) )+i)%(n+1) ]<<" "; } cout<<"\n";
+          //  for(i=0;i<1+n;i++){  cout<<b[i]<<" "; } cout<<"\n";
+         for(i=0;i<n;i++){ cout<<b[ (n-((k-1)%(n+1) )+i)%(n+1) ]<<" "; } cout<<"\n";
     }
 
     return 0;
