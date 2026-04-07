@@ -15,7 +15,7 @@ int main()
             if(a[i]%2==0){o++;}
             else{ p++; }
         }
-        cout<<n-(min(p,o))<<"\n";;
+        cout<<(min(p,o))<<"\n";;
 
     }
 
