@@ -15,7 +15,7 @@ int main()
    l=(k-1)/4;
    j=(k-1)%4;
    j=j%2;
-   cout<<l*14+j*7+p[m]+1<<"\n";
+   cout<<l*16+j*7+p[m]+1<<"\n";
 
     return 0;
 }
