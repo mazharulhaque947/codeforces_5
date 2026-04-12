@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    int a[100000],b[100000],i,j,k,l,m,n,o,p,t;
+    long long a[100000],b[100000],i,j,k,l,m,n,o,p,t;
 
     cin>>t;
     while(t--)
