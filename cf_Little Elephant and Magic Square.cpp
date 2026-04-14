@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    int a[3],b[3][3],c[3],i,j,k,l,o,p,m,n;
+    int a[3],b[3][3],c[3],i,j,k,l,o,p,m,n,v;
 
     for(i=0;i<3;i++){ cin>>b[i][0]>>b[i][1]>>b[i][2]; }
     o=b[0][1]+b[0][2];
@@ -20,10 +20,11 @@ int main()
     c[2]=a[2]= m=m;
     //cout<<o<<p<<m;
     sort(a,a+3);
-    k=1+a[2];
-
+    k=0+a[2];
+    o=0;
+    while(-c[0]+k+o+b[0][1]+b[0][1]!=-c[0]+k-c[1]+k-c[2]+k+3*o){o++;}
      for(i=0;i<3;i++){
-        for(j=0;j<3;j++){ if(i==j){ cout<<-c[i]+k<<" "; } else{ cout<<b[i][j]<<" "; }} cout<<"\n";
+        for(j=0;j<3;j++){ if(i==j){ cout<<-c[i]+k+o<<" "; } else{ cout<<b[i][j]<<" "; }} cout<<"\n";
 
      }
     return 0;
