@@ -10,15 +10,20 @@ int main()
     p=b[1][0]+b[1][2];
     m=b[2][0]+b[2][1];
   l=o;
-     c[0]=a[0]=o=o-l;
-c[1]=a[1]=p=p-l;
-    c[2]=a[2]= m=m-l;
+     //c[0]=a[0]=o=o-l;
+//c[1]=a[1]=p=p-l;
+    //c[2]=a[2]= m=m-l;
+    //cout<<o<<p<<m;
+
+    c[0]=a[0]=o=o;
+    c[1]=a[1]=p=p;
+    c[2]=a[2]= m=m;
     //cout<<o<<p<<m;
     sort(a,a+3);
-    k=3-a[2];
+    k=1+a[2];
 
      for(i=0;i<3;i++){
-        for(j=0;j<3;j++){ if(i==j){ cout<<c[i]+k<<" "; } else{ cout<<b[i][j]<<" "; }} cout<<"\n";
+        for(j=0;j<3;j++){ if(i==j){ cout<<-c[i]+k<<" "; } else{ cout<<b[i][j]<<" "; }} cout<<"\n";
 
      }
     return 0;
