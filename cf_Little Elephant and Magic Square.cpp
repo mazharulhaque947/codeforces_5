@@ -23,7 +23,8 @@ int main()
     k=0+a[2];
     o=0;
     nn=0;
-    while(-c[0]+k+o+b[0][1]+b[0][2]!=-c[0]+k-c[1]+k-c[2]+k+3*o){cout<<o<<"\n";o++; }
+    while(-c[0]+k+o+b[0][1]+b[0][2]!=-c[0]+k-c[1]+k-c[2]+k+3*o){//cout<<o<<"\n";
+    o++; }
      for(i=0;i<3;i++){
         for(j=0;j<3;j++){ if(i==j){ cout<<-c[i]+k+o<<" "; } else{ cout<<b[i][j]<<" "; }} cout<<"\n";
 
