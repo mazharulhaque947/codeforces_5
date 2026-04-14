@@ -15,7 +15,7 @@ c[1]=a[1]=p=p-l;
     c[2]=a[2]= m=m-l;
     //cout<<o<<p<<m;
     sort(a,a+3);
-    k=1-a[0];
+    k=1-a[2];
 
      for(i=0;i<3;i++){
         for(j=0;j<3;j++){ if(i==j){ cout<<c[i]+k<<" "; } else{ cout<<b[i][j]<<" "; }} cout<<"\n";
