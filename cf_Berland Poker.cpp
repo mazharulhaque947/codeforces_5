@@ -16,7 +16,7 @@ if(o<=m){ a=o; b=m-o; }
 else{ a=m; b=0;   }
 c=b%(k-1);
 if(c==0){ c=b/(k-1);  }
-else{  c=b/(k-1) +b%(k-1); }
+else{  c=(b/(k-1)) +(b%(k-1)); }
 p=a-c;
 if(p<0){  p=0;}
 cout<<p<<"\n";
