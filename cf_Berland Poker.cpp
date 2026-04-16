@@ -18,7 +18,7 @@ c=b%(k-1);
 if(c==0){ c=b/(k-1);  }
 else{  c=(b/(k-1)) +(b%(k-1)); }
 p=a-c;
-if(p<0){  p=0;}
+//if(p<0){  p=0;}
 cout<<p<<"\n";
 }
 return 0;
