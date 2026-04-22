@@ -8,7 +8,7 @@ int main()
 
     while(t--)
     {
-        cin>>a,b;
+        cin>>a>>b;
 
         k=sqrt( a*a + b*b );
         if(a==0&&b==0){ cout<<"0\n"; }
