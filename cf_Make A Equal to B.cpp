@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-int maain()
+int main()
 {
     int a[100],b[100],i,k,l,m,n,t;
     cin>>t;
