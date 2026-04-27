@@ -32,6 +32,7 @@ int main()
 
               if(v==0&&y==1){ if(x!=k&&ol(w,m)==1&&m%2==1){ cout<<"YES\n";  }else{ cout<<"NO\n"; }  }
               else{ if(x!=k&&ol(w,m)==1&&m%2==1){ cout<<"YES\n";  }else{ cout<<"NO\n"; }  }
+              else{ cout<<"NO\n"; }
 
 
          }
