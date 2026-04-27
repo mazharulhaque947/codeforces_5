@@ -22,7 +22,7 @@ int main()
 
          k=q[0]-48;
          x=w[0]-48;
-         l=p=o=0;
+         l=p=o=m=0;
          for(i=0;i<n;i++){  if(q[i]==q[p]){m++;} else{ a[l]=m; m=1; p=i; l++; } if(i==n-1){ a[l]=m; l++; } }
          v=y=1;
          for(i=0;i<l;i+=2){ if(a[i]!=1){ v=0; break; } }
