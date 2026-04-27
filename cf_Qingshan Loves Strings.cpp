@@ -4,7 +4,7 @@ int ol(string a, int n)
 {
     int i,k,l;
     k=1;
-    for(i=0;i<n-1;i++){ if(a[i]!=a[i+1]){k=0; break;} }
+    for(i=0;i<n-1;i++){ if(a[i]==a[i+1]){k=0; break;} }
 
     return k;
 }
