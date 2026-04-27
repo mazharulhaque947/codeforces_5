@@ -25,8 +25,8 @@ int main()
          l=p=o=0;
          for(i=0;i<n;i++){  if(q[i]==q[p]){m++;} else{ a[l]=m; m=1; p=i; l++; } if(i==n-1){ a[l]=m; l++; } }
          v=y=1;
-         for(i=0;i<n;i+=2){ if(a[i]!=1){ v=0; break; } }
-         for(i=1;i<n;i+=2){ if(a[i]!=1){ y=0; break; } }
+         for(i=0;i<l;i+=2){ if(a[i]!=1){ v=0; break; } }
+         for(i=1;i<l;i+=2){ if(a[i]!=1){ y=0; break; } }
          if(ol(q,n)==1){ cout<<"YES\n"; }
          else{
 
