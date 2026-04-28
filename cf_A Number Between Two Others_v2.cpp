@@ -31,7 +31,7 @@ cin>>m;
 for(j=0;j<t;j++){
 
     //cout<<a[j]<<"\n";
-    if(a[i]!=-1){ cout<<"NO\n"; }
+    if(a[j]!=-1){ cout<<"NO\n"; }
     else{  cout<<"YES\n";  }
 }
 
