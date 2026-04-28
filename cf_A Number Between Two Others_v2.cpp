@@ -18,7 +18,7 @@ cin>>m;
    p=(o-1)*n;
 
      if(p<=n){//cout<<"YES\n";
-     a[j]=-1;}
+     a[i]=-1;}
      else{//cout<<"NO\n";
      a[j]=p;}
 
