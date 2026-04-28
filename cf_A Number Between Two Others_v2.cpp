@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-int a[100],l,k,i,j,m,n,o,p,t;
+long long a[100],l,k,i,j,m,n,o,p,t;
 
 //FILE *F1;
 //F1=freopen("lab1b.txt","r",stdin);
@@ -30,7 +30,9 @@ cin>>m;
 //F2=freopen("lab1b_ans.txt","w",stdout);
 for(j=0;j<t;j++){
 
-    cout<<a[j]<<"\n";
+    //cout<<a[j]<<"\n";
+    if(a[i]!=-1){ cout<<"NO\n"; }
+    else{  cout<<"YES\n";  }
 }
 
 //fclose(F2);
