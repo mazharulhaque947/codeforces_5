@@ -21,13 +21,22 @@ int main()
         }
         //for(i=0;i<l;i++){ cout<<a[i]<<" "; } cout<<"\n";
         k=1;
-        p=0;
+        p=m=o=0;
         // if there are more than 2 group with more than frequency 2, or a group with more than 2 frequency
-        for(i=0;i<l;i++){ if(a[i]>=3||p>=3){k=0; break;} if(a[i]>1){p++;} }
-         if(k==1||n==3){//cout<<"YES\n";
+        for(i=0;i<l;i++){ if(a[i]==3){ m++; } if(a[i]>1){p++;} if(a[i]==2){ o++; } }
+
+
+        if(m==1&&p==1){  }
+        else if(m==0&&p<=2&&o==p){  }
+
+        else{ k=0; }
+
+
+         if(k==1){//cout<<"YES\n";
          ans[j]="YES";}
          else{//cout<<"NO\n";
          ans[j]="NO";}
+
     }
    // fclose(F1);
    // FILE *F2;
