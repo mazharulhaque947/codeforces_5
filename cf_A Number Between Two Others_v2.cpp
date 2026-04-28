@@ -17,10 +17,12 @@ cin>>m;
    o=m/n;
    p=(o-1)*n;
 
-     if(p<=n){//cout<<"YES\n";
-     a[i]=-1;}
-     else{//cout<<"NO\n";
-     a[j]=p;}
+     if(p>n){cout<<"YES\n";
+     //a[i]=-1;
+     }
+     else{cout<<"NO\n";
+     //a[j]=p;
+     }
 
 }
 
@@ -28,6 +30,7 @@ cin>>m;
 
 //FILE *F2;
 //F2=freopen("lab1b_ans.txt","w",stdout);
+/*
 for(j=0;j<t;j++){
 
     //cout<<a[j]<<"\n";
@@ -36,6 +39,7 @@ for(j=0;j<t;j++){
 }
 
 //fclose(F2);
+*/
 return 0;
 //Plain text
 }
