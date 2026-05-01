@@ -17,7 +17,7 @@ int main()
     o=n-(k-1)*(k-1);
 
     if(o<=k){ cout<<o<<" "<<k<<"\n"; }
-    else{cout<<k<<" "<<2*k+1-o+1<<"\n";  }
+    else{cout<<k<<" "<<2*k-o<<"\n";  }
 
     }
 
