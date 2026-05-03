@@ -3,11 +3,13 @@ using namespace std;
 int main()
 {
 int b[2000],c[4000],i,j,k,l,m,n,o,p,t,x,y,u,v,bl,bm,mm;
+set<int>ss;
 vector<pair<int,int>>a;
 cin>>t;
 while(t--)
 {
 a.clear();
+ss.clear();
 cin>>n;
 for(i=0;i<n;i++){cin>>k; a.push_back({k,i});   }
 for(i=0;i<n;i++){ cin>>k; b[i]=k;   }
@@ -21,8 +23,8 @@ else{o=o+m; c[2*l]=b[k]; c[2*l+1]=o; m=1; k=i;l++;  }
 if(i==n-1){ o=o+m; c[2*l]=b[k]; c[2*l+1]=o; m=1; k=i;l++;  }
  }
 x=1;
-for(i=0;i<l;i++){ for(j=i+1;j<l;j++){
- if(c[2*i]==c[2*j]){  x=0; break; } } if(x==0){break;} }
+//for(i=0;i<l;i++){ for(j=i+1;j<l;j++){if(c[2*i]==c[2*j]){  x=0; break; } } if(x==0){break;} }
+for(i=0;i<l;i++){ ss.insert(c[2*i]); }  if(ss.size()!=l){x=0;}
 //for(j=0;j<n;j++){ if(a[j].first==c[2*0]){  break;}  }
 //y=a[j].second;
 
