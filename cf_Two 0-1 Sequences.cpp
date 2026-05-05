@@ -21,8 +21,8 @@ int main()
             o=1;
             for(i=0;i<m-1;i++){ if(q[n-1-i]!=w[m-1-i]){ o=0; break; } }
 
-            if(w[0]=='1'){ if(b[n-m-1]<=0){ o=0; } }
-            else{ if(a[n-m-1]<=0){ o=0; } }
+            if(w[0]=='1'){ if(b[n-m]<=0){ o=0; } }
+            else{ if(a[n-m]<=0){ o=0; } }
 
             if(o==1){cout<<"YES\n";}
             else{ cout<<"NO\n"; }
