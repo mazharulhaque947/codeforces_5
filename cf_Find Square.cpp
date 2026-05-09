@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     string a[115];
-    int b[10000],c[10000],i,j,k,l,m,n,t;
+    int b[13225],c[13225],i,j,k,l,m,n,t;
 
 
 
