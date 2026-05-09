@@ -6,10 +6,9 @@ int main()
     string a[115];
     int b[10000],c[10000],i,j,k,l,m,n,t;
 
-    cin>>t;
 
-    while(t--)
-    {
+
+
         cin>>n>>m;
         l=0;
 
@@ -19,9 +18,11 @@ int main()
 
             for(j=0;j<m;j++){ if(a[i][j]=='B'){ b[l]=i; c[l]=j; l++; } }
          }
+         cout<<l<<'\n';
+         j=(b[l-1]+b[0]+1)/2;
+         k=(c[l-1]+c[0]+1)/2;
+         cout<<j+1<<" "<<k+1<<"\n";
 
-         cout<<(b[l-1]-b[0]+1)/2<<" "<<(c[l-1]-c[0]+1)/2<<"\n";
-    }
 
     return 0;
 }
