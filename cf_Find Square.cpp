@@ -3,7 +3,8 @@ using namespace std;
 
 int main()
 {
-    string a[115],b[10000],c[10000],i,j,k,l,m,n,t;
+    string a[115];
+    int b[10000],c[10000],i,j,k,l,m,n,t;
 
     cin>>t;
 
