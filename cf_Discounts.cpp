@@ -11,7 +11,7 @@ int main()
         for(i=0;i<n;i++){cin>>a[i];s+=a[i];}
         sort(a,a+n);
         cin>>m;
-        for(i=0;i<m;i++){cin>>b[i];cout<<s-a[b[i]-1]<<"\n";}
+        for(i=0;i<m;i++){cin>>b[i];cout<<s-a[n-b[i]]<<"\n";}
 
     }
     return 0;
