@@ -14,7 +14,7 @@ int main()
         k=0;
         m=1-a[q[0]-48]; if(m<0){m=m*-1;}
         k+=m;
-        for(i=0;i<3;i++){ m=q[i]-48-a[q[i+1]-48]; if(m<0){m=m*-1;} k+=m;}
+        for(i=0;i<3;i++){ m=a[q[i]-48]-a[q[i+1]-48]; if(m<0){m=m*-1;} k+=m;}
         cout<<k+4<<"\n";
     }
     return 0;
