@@ -9,10 +9,10 @@ int main()
        for(j=0;j<10;j++){ a[j][i-1]=i; a[j][10-i]=i; a[i-1][j]=i; a[10-i][j]=i; }
 
    }
-   for(i=0;i<10;i++){
+  // for(i=0;i<10;i++){
 
-      for(j=0;j<10;j++){ cout<<a[i][j]<<" "; } cout<<"\n";
-   }
+    //  for(j=0;j<10;j++){ cout<<a[i][j]<<" "; } cout<<"\n";
+  // }
 
    cin>>t;
     while(t--)
