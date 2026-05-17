@@ -12,7 +12,9 @@ int main()
     {   o=1000000000;
         cin>>n;
         p=1000000000;
-        for(i=0;i<n;i++){ cin>>a[i]; if(i!=0){ p=a[i]; if(p<a[i-1]){p=a[i-1]; } p--; cout<<p<<"\n"; if(p<o){o=p;} } }
+        for(i=0;i<n;i++){ cin>>a[i]; if(i!=0){ p=a[i]; if(p<a[i-1]){p=a[i-1]; } p--; //cout<<p<<"\n";
+
+         if(p<o){o=p;} } }
         cout<<o<<"\n";
 
     }
