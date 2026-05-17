@@ -13,7 +13,7 @@ int main()
         cin>>m>>n;
 
         if(n%2==0&&m%2==0){ cout<<"YES\n"; }
-        else if(m%2==1&&n>=2&&n%2==0){ cout<<"YES\n";  }
+        else if(n%2==1&&m>=2&&m%2==0){ cout<<"YES\n";  }
 
         else{ cout<<"NO\n";  }
 
