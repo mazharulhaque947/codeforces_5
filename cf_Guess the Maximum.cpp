@@ -12,7 +12,7 @@ int main()
     {
         cin>>n;
 
-        for(i=0;i<n;i++){ if(i!=0){ p=max(a[i],a[i-1])-1; if(p<o){o=p;} } }
+        for(i=0;i<n;i++){ cin>>a[i]; if(i!=0){ p=max(a[i],a[i-1])-1; if(p<o){o=p;} } }
         cout<<o<<"\n";
 
     }
