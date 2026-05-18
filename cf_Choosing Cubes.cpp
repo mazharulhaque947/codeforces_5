@@ -17,7 +17,7 @@ int main()
         if(k==n){ cout<<"YES\n"; }
         else{
 
-           if(a[k]==m&&a[k-1]==m){ cout<<"MABYE\n"; }
+           if(a[k]==m&&a[k-1]==m){ cout<<"MAYBE\n"; }
            else if(a[k]<m){  cout<<"YES\n"; }
            else{  cout<<"NO\n"; }
 
