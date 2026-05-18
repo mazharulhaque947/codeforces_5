@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    int a[100],i,j,k,l,t,s,t;
+    int a[100],i,j,k,l,t,s;
 
     cin>>t;
 
