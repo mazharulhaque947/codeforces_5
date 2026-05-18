@@ -13,7 +13,7 @@ int main()
 
         cin>>q;
         for(i=0;i<n;i++){  if(q[i]-48>=m){ cout<<q[i]; } else{ break;} }
-        cout<<m<<"\n";
+        cout<<m<<"";
         for(;i<n;i++){   cout<<q[i];  }
         cout<<"\n";
 
