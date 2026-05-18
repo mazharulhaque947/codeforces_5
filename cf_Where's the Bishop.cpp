@@ -10,8 +10,14 @@ int main()
 
     while(t--){
         m=n=0;
-        for(i=0;i<8;i++){ cin>>a[i]; if(count(a[i].begin(),a[i].end(),'#')==1){
-                m=i+1; for(j=0;j<8;j++){if(a[i][j]=='#'){ n=j+1; }  } }
+        for(i=0;i<8;i++){ cin>>a[i];}
+        for(i=1;i<7;i++){
+         if(count(a[i].begin(),a[i].end(),'#')==1){
+                m=i+1; for(j=1;j<7;j++){if(a[i][j]=='#'){ n=j+1; }  }
+
+                break;
+
+                }
         }
        cout<<m<<" "<<n<<"\n";
     }
