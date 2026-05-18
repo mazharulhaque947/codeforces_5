@@ -11,7 +11,7 @@ int main()
    while(t--)
    {
        cin>>n>>k>>a;
-      if(n>k+a+1){ cout<<"First\n";  }
+      if(n>=k+a+1){ cout<<"First\n";  }
       else if(n+a<=k){  cout<<"Second\n"; }
       else if(n==k){
         if(a%2==1){ cout<<"First\n";  }
@@ -20,7 +20,7 @@ int main()
       }
       else if(n<k){
         a=a-(k-n);
-           if(a%2==0){ cout<<"First\n";  }
+           if(a%2==1){ cout<<"First\n";  }
       else {  cout<<"Second\n"; }
 
       }
