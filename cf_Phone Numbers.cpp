@@ -3,10 +3,11 @@ using namespace std;
 
 int main()
 {
-    int n;
+    int n,i,j,k;
     string q;
     cin>>n;
     cin>>q;
-    cout<<n/11<<"\n";
+    k=count(q.begin(),q.end(),'8');
+    cout<<min(n/11,k)<<"\n";
     return 0;
 }
