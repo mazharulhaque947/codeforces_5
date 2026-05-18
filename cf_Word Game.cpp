@@ -5,7 +5,7 @@ int vv(string q){
 
    int a=0;
    a=26*26*(q[0]-97)+26*(q[1]-97)+(q[2]-97);
-   cout<<a<<"\n";
+   //cout<<a<<"\n";
    return a;
 }
 
@@ -29,9 +29,10 @@ int main()
            if(((a[0][i]+a[1][i]+a[2][i])-a[j][i])==1){k-=2;}
 
         }  }
-        cout<<k<<"\n";
+        cout<<k<<" ";
 
      }
+      cout<<"\n";
     }
     return 0;
 }
