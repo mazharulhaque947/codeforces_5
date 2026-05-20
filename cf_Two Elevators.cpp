@@ -12,10 +12,10 @@ int main()
 
         cin>>a>>b>>c;
 
-        if(b<c){  b=2*(c-b)+b; }
+        if(b<c){  b=2*(c-b)+b-1; }
 
-        if(a==b){cout<<"1\n";}
-        else if(a<b){ cout<<"2\n"; }
+        if(a-1==b){cout<<"1\n";}
+        else if(a-1<b){ cout<<"2\n"; }
         else{ cout<<"3\n"; }
     }
 
