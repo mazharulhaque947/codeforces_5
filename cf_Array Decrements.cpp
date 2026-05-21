@@ -16,7 +16,7 @@ int main()
 
         k=a[0]-b[1];
         o=1;
-         for(i=1;i<n;i++){cin>>b[i]; if(a[i]-b[i]!=k){o=0;} }
+         for(i=1;i<n;i++){cin>>b[i]; if(b[i]!=0&&a[i]-b[i]!=k){o=0;} }
 
         if(o==1&&k>=0){cout<<"YES\n";}
         else{cout<<"NO\n";}
