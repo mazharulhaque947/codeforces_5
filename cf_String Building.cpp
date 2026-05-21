@@ -16,7 +16,7 @@ int main()
         k=l=m=0;
 
         for(i=0;i<n;i++){
-            if(q[i]!=q[k]){ m++; }
+            if(q[i]==q[k]){ m++; }
             else{ a[l]=m; m=1; l++; k=i; }
             if(i==n-1){  a[l]=m; m=1; l++; k=i; }
 
