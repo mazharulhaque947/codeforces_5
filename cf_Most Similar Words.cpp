@@ -17,7 +17,7 @@ int main()
 
         k=0;
 
-        for(i=0;i<n;i++){
+        for(i=0;i<n-1;i++){
             for(j=i+1;j<n;j++){
 
                 for(o=0;o<m;o++){
