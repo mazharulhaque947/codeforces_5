@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     string q[100];
-    int i,j,k,l,m,n,o,p,t;
+    int i,j,k,l,m,n,o,r,p,t;
 
     cin>>t;
 
@@ -20,11 +20,11 @@ int main()
         for(i=0;i<n;i++){
             for(j=i+1;j<n;j++){
 
-                for(o=0;o<3;o++){
+                for(o=0;o<m;o++){
 
-                      m=q[i][o]-q[j][o];
-                      if(m<0){m=m*-1;}
-                      k+=m;
+                      r=q[i][o]-q[j][o];
+                      if(r<0){r=r*-1;}
+                      k+=r;
 
                 }
             }
