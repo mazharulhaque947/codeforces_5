@@ -20,7 +20,7 @@ int main()
         for(i=0;i<n;i++){
             for(j=i+1;j<n;j++){
 
-                for(o=0;i<3;o++){
+                for(o=0;o<3;o++){
 
                       m=q[i][o]-q[j][o];
                       if(m<0){m=m*-1;}
