@@ -26,7 +26,7 @@ int main()
       }
       else{
            a=a-(n-k);
-           if(a%2==1){ cout<<"First\n";  }
+           if(a%2==0){ cout<<"First\n";  }
       else {  cout<<"Second\n"; }
 
 
