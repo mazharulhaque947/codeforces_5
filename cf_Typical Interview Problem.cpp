@@ -16,7 +16,7 @@ int main()
 
         m=0;
 
-        for(i=0;i<8;i++){ l=1; for(j=0;j<n;j++){ if(a[(j+i)%8]!=q[j]-65){ l=0; break; } }   if(m==1){break;} }
+        for(i=0;i<8;i++){ l=1; for(j=0;j<n;j++){ if(a[(j+i)%8]!=q[j]-65){ l=0; break; } } m=l;  if(m==1){break;} }
 
         if(m==1){ cout<<"YES\n"; }
         else{ cout<<"NO\n"; }
