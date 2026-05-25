@@ -15,7 +15,7 @@ int main()
         k=1;
         for(i=0;i<n;i++){ cin>>a[i]; }
         o=0;
-        for(i=n;i>=1;i--){ b[a[i-1]-1]++; if(b[a[i-1]-1]>=2){ k=0; o=n-i; break; } }
+        for(i=n;i>=1;i--){ b[a[i-1]-1]++; if(b[a[i-1]-1]>=2){ k=0; o=i; break; } }
 
        // if(k==0){ cout<<"NO\n"; }
         //else{ cout<<"YES\n"; }
