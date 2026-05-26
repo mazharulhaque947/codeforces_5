@@ -12,19 +12,9 @@ int main()
 
         cin>>n;
 
-        a[0]=1;
-        l=1;
 
-        o=-1;
-        p=2;
-        while(l<n){
 
-            if(o!=-1&&p==o){  }
-            else{ a[l]=p; o=a[l-1]+p; l++; }
-            p++;
-        }
-
-        for(i=0;i<l;i++){ cout<<a[i]<<" ";} cout<<"\n";
+        for(i=2*n;i>n;i--){ cout<<i<<" ";} cout<<"\n";
     }
 
     return 0;
