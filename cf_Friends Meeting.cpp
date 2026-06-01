@@ -6,7 +6,7 @@ int nump(int n)
 
     int m;
 
-    m= (n*(n+1))/2;
+    m=(n*(n+1))/2;
 
     return m;
 
@@ -17,9 +17,6 @@ int main()
 {
     int a,b,i,j,k,t,m,n;
 
-    cin>>t;
-
-    while(t--){
 
         cin>>a>>b;
 
@@ -31,7 +28,7 @@ int main()
 
         cout<<nump(k)+nump(n)<<"\n";
 
-    }
+
 
     return 0;
 }
