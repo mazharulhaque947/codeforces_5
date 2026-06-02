@@ -1,6 +1,7 @@
 
 //Professor GukiZ's Robot
-
+#include<bits/stdc++.h>
+using namespace std;
 int main()
 {
 int a,b,c,d,t,u,i,j,k;
