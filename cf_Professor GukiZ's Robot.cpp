@@ -6,8 +6,8 @@ int main()
 {
 int a,b,c,d,t,u,i,j,k;
 
-cin>>t;
-while(t--)
+//cin>>t;
+//while(t--)
 {
 cin>>a>>b;
 cin>>c>>d;
