@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+#define int long long
 using namespace std;
 int gg(int a,int b)
 {
@@ -37,7 +38,7 @@ int main()
 
         for(i=0;i<n;i++){
 
-            if(a[i]*(l/b[i])<a[k]*(l/b[k])){ k=i; }
+            if( a[i]*(l/b[i]) < a[k]*(l/b[k])  ){ k=i; }
 
         }
 
