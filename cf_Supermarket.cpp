@@ -47,8 +47,8 @@ int main()
         x=x*m;
         x=x/y;
 
-        cout<<x<<"\n";
-
+        //cout<<x<<"\n";
+        printf("%.6lf\n",x);
 
 
     }
