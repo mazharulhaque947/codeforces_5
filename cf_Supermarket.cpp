@@ -4,7 +4,7 @@ int gg(int a,int b)
 {
 
     if(b%a==0){ return a; }
-    else{  return gg(b,b%a);  }
+    else{  return gg(b%a,a);  }
 
 }
 int lc(int a, int b)
