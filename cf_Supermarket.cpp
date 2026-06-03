@@ -14,7 +14,7 @@ int main() {
         mn = min(mn, a/b);
     }
 
-printf("%.6lf\n",mn);
+printf("%.6lf\n",mn*m);
 
     return 0;
 }
