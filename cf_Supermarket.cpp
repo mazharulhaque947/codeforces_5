@@ -20,9 +20,9 @@ int main()
 {
     int n,m,i,j,k,l,o,p,t,a[500],b[500];
 
-    cin>>t;
+   // cin>>t;
 
-    while(t--)
+   // while(t--)
     {
         cin>>n>>m;
         l=1;
