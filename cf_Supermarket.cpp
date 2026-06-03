@@ -17,7 +17,7 @@ int lc(int a, int b)
     return c;
 
 }
-int main()
+int32_t main()
 {
     int n,m,i,j,k,l,o,p,t,a[500],b[500];
 
