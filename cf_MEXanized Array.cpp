@@ -14,8 +14,18 @@ int main()
 
         if(n<k||m<k-1){  cout<<-1<<"\n"; }
         else{
+                o=0;
 
-            for(i=0;i<k;i++){cout<<i<<" ";} l=m; if(k==m){ l--; } for(i=0;i<n-k;i++){ cout<<l<<"\n"; } cout<<"\n";
+            for(i=0;i<k;i++){//cout<<i<<" ";
+              o+=i;
+
+            } l=m; if(k==m){ l--; } for(i=0;i<n-k;i++){ //cout<<l<<"\n";
+
+              o+=l;
+             }
+
+
+             cout<<o<<"\n";
 
         }
 
