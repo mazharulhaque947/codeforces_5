@@ -16,7 +16,7 @@ int main()
         m=w.size();
 
         o=0;
-        for(i=0;i<min(n,m);i++){ if(q[i]==w[i]){o++;} }
+        for(i=0;i<min(n,m);i++){ if(q[i]==w[i]){o++;}else{break;} }
 
          if(o==0){}
          else{o=o-1; }
