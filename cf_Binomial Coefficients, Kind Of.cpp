@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+#define int long long
 using namespace std;
 int pp(int v)
 {
@@ -18,7 +19,7 @@ int pp(int v)
 
     return p;
 }
-int main()
+int32_t main()
 {
     int i,j,k,l,m,n,o[100],p[100],t;
     cin>>t;
