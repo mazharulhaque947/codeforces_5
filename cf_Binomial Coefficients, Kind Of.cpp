@@ -4,16 +4,16 @@ using namespace std;
 int pp(int v)
 {
    int z,p,q;
-   q=100;
+   q=1000000007;
    p=1;
    z=2;
    while(v>0)
    {
 
-       if(v%2==1){ p=((p%q)*(z%q))%q;  }
+       if(v%2==1){ p=(p*z)%q;  }
 
        v=v/2;
-       z=((z%q)*(z%q))%q;
+       z=(z*z)%q;
 
    }
 
@@ -21,7 +21,7 @@ int pp(int v)
 }
 int32_t main()
 {
-    int i,j,k,l,m,n,o[100],p[100],t;
+    int i,j,k,l,m,n,o[200],p[200],t;
     cin>>t;
 
     for(i=0;i<t;i++){cin>>o[i];}
