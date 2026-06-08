@@ -13,7 +13,7 @@ int main()
 
         cin>>n;
 
-        if(n<=18){  cout<<"YES\n"; k=1; for(i=0;i<n;i++){ cout<<k<<" "; k*=3; } }
+        if(n<=19){  cout<<"YES\n"; k=1; for(i=0;i<n;i++){ cout<<k<<" "; k*=3; } }
 
         else{  cout<<"NO"; }
 
