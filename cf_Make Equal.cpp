@@ -1,8 +1,9 @@
-//#include<bits/stdc++.h>
-#include<iostream>
+#include<bits/stdc++.h>
+//#include<iostream>
+#define int long long
 using namespace std;
 
-int main()
+int32_t main()
 {
     int a[100],i,j,k,l,m,n,o,p,t;
 
