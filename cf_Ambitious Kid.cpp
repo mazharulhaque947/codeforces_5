@@ -4,8 +4,8 @@ using namespace std;
 int main()
 {
     int a[100],i,j,k,t,n;
-    cin>>t;
-    while(t--)
+   // cin>>t;
+   // while(t--)
     {
 
         cin>>n;
