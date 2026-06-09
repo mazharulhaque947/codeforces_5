@@ -15,7 +15,7 @@ int main()
         k=0;
         for(i=0;i<n;i++){  c[a[i]-1]++; if(c[a[i]-1]>k){ k=c[a[i]-1]; }  }
 
-        cout<<k<<"\n";
+        cout<<n-k<<"\n";
     }
 
     return 0;
