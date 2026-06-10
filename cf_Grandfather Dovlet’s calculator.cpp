@@ -8,7 +8,7 @@ int main()
     cin>>m>>n;
 
     o=0;
-    for(i=m;i<n;i++){
+    for(i=m;i<=n;i++){
         k=i;
         while(k>0){
             p=k%10;
