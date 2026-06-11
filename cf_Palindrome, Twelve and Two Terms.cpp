@@ -5,7 +5,7 @@
 #define int long long
 using namespace std;
 
-int main()
+int32_t main()
 {
 int n,j,k,m,o,p,t;
 cin>>t;
