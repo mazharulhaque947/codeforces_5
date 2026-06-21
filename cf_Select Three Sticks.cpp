@@ -12,7 +12,7 @@ int main()
        cin>>n;
        for(i=0;i<n;i++){ cin>>a[i]; }
        sort(a,a+n);
-       l=k=m=0;
+     /*  l=k=m=0;
        o=0;
        for(i=0;i<n;i++){
 
@@ -45,11 +45,17 @@ int main()
 
                           }
 
-           cout<<o<<"\n";
+           cout<<oo<<"\n";
 
 
        }
 
+       */
+    oo=1e9;
+
+    for(i=0;i<n-2;i++){ pp=a[i+2]-a[i+1]; pp+=a[i+1]-a[i]; if(oo>pp){ oo=pp;}  }
+
+    cout<<oo<<"\n";
     }
 
     return 0;
