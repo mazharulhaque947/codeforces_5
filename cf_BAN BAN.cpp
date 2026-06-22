@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    int n,i,j,k,l,m,i,j,t;
+    int n,k,l,m,i,j,t;
     cin>>t;
 
     while(t--)
@@ -13,7 +13,7 @@ int main()
         m=n/2;
         m+=n%2;
         cout<<m<<"\n";
-        for(i=0;i<m;i++){ cout<<(1+i*3)<<" "<<(n-1)*+2<<"\n"; }
+        for(i=0;i<m;i++){ cout<<(1+i*3)<<" "<<(n-1)*3+2<<"\n"; }
 
 
 
