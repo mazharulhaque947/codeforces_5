@@ -17,7 +17,7 @@ int main()
 
         for(i=1;i<n;i++){
 
-                c[i]=a[i]-a[i-1]; a[i]-=a[i-1];
+               if(a[i]>v){v=a[i];}  c[i]=a[i]-a[i-1]; a[i]-=a[i-1]; if(a[i]>v){v=a[i];}
        // if(a[i]-a[i-1]>v){v=a[i]-a[i-1]; a[i]-=a[i-1];}else{break;}
 
 
@@ -27,7 +27,8 @@ int main()
          }
          sort(c,c+n);
 
-        cout<<c[n-1]<<"\n";
+        cout<<v<<"\n";
+
     }
 
 
