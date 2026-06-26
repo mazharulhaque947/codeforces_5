@@ -17,8 +17,9 @@ int main()
 
         for(i=1;i<n;i++){
                 m=m+a[i-1];
+               // cout<<m<<"\n";
                 if(a[i]-m>v){v=a[i]-m;}
-                a[i]-=a[i-1];
+                a[i]-=m;
 
 
               // if(a[i]>v){v=a[i];}
@@ -30,6 +31,7 @@ int main()
 
 
          }
+           // for(i=0;i<n;i++){cout<<a[i]<<" ";}
          sort(c,c+n);
 
         cout<<v<<"\n";
