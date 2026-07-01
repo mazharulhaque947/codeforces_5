@@ -14,7 +14,7 @@ int main()
         p=n%5;
 
         if(m>0){
-            for(i=0;i<n;i++)
+            for(i=0;i<5;i++)
             {
 
                 o=0;
