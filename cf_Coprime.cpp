@@ -1,7 +1,24 @@
 
 #include<bits/stdc++.h>
 using namespace std;
+int gg(int a, int b)
+{
+    int c;
 
+    c=1;
+
+    while(a!=1)
+    {
+
+       c=b%a;
+       b=a;
+       a=c;
+
+    }
+
+
+    return b;
+}
 int main()
 {
     int a[1000],b[200],c[200],i,j,k,l,m,n,o,p,t;
@@ -19,7 +36,8 @@ int main()
         for(i=0;i<l;i++){
                 for(j=i;j<l;j++){  m=c[i]+1; o=c[j]+1;
                     if(m>o){swap(m,o);}
-                    if( (o==1&&m==1)|| o%m!=0){ if(k<a[m-1]+a[o-1]){k=a[m-1]+a[o-1];} }
+                    //if( (o==1&&m==1)|| o%m!=0){ if(k<a[m-1]+a[o-1]){k=a[m-1]+a[o-1];} }
+                    if( gg(m,o)==1 ){ if(k<a[m-1]+a[o-1]){k=a[m-1]+a[o-1]+2;} }
                 }
         }
        cout<<k<<"\n";
