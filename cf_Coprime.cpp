@@ -7,7 +7,7 @@ int gg(int a, int b)
 
     c=1;
 
-    while(a!=1)
+    while(a!=0)
     {
 
        c=b%a;
