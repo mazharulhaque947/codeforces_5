@@ -19,7 +19,7 @@ int main()
         for(i=0;i<l;i++){
                 for(j=i;j<l;j++){  m=c[i]+1; o=c[j]+1;
                     if(m>o){swap(m,o);}
-                    if( o%m!=0){ if(k<a[m-1]+a[o-1]){k=a[m-1]+a[o-1];} }
+                    if( (o==1&&m==1)|| o%m!=0){ if(k<a[m-1]+a[o-1]){k=a[m-1]+a[o-1];} }
                 }
         }
        cout<<k<<"\n";
