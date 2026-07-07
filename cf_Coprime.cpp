@@ -31,13 +31,14 @@ int main()
        for(i=0;i<n;i++){cin>>b[i];if(a[b[i]-1]==-1){c[l]=b[i]-1;l++;}a[b[i]-1]=i;}
        k=-1;
 
-       for(i=0;i<l;i++){cout<<c[i]<<" ";} cout<<"\n";
+       //for(i=0;i<l;i++){cout<<c[i]<<" ";} cout<<"\n";
 
         for(i=0;i<l;i++){
                 for(j=i;j<l;j++){  m=c[i]+1; o=c[j]+1;
                     if(m>o){swap(m,o);}
+                   // cout<<m<<" "<<o<<" "<<gg(m,o)<<" "<<a[m-1]+a[o-1]+2<<"\n";
                     //if( (o==1&&m==1)|| o%m!=0){ if(k<a[m-1]+a[o-1]){k=a[m-1]+a[o-1];} }
-                    if( gg(m,o)==1 ){ if(k<a[m-1]+a[o-1]){k=a[m-1]+a[o-1]+2;} }
+                    if( gg(m,o)==1 ){ if(k<a[m-1]+a[o-1]+2){k=a[m-1]+a[o-1]+2;} }
                 }
         }
        cout<<k<<"\n";
