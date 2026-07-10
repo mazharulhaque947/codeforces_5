@@ -29,7 +29,7 @@ int main()
         for(i=0;i<n;i++){cin>>a[i]; if(a[i]<a[l]){l=i;}}
 
         for(i=0;i<n;i++){  if(a[i]!=a[l]){g=i; break;}  }
-        if(g==-1){cout<<0<<"\n";}
+        if(g==-1){cout<<-1<<"\n";}
         else{
 
             for(i=g,g=a[g]-a[l  ];i<n;i++){  if(a[i]==a[l]){ }else{ g=gg(g,a[i]-a[l]); }  }
