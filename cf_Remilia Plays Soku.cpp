@@ -9,7 +9,7 @@ int main()
     {
         cin>>n>>x>>y>>k;
         u=min( (n+y-x)%n ,(n+x-y)%n );
-        if(n>=2){u+=k;}
+        if(n>2){u+=k;}
         cout<<u<<"\n";
 
 
