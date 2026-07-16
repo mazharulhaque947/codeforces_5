@@ -27,7 +27,7 @@ long long nn(long long a[300][20],long long  c[2],long long  i,long long l)
     return o;
 }
 int main()
-{   ios_base::sync_with_stdio(false);cin.tie(nullptr);
+{   //ios_base::sync_with_stdio(false);cin.tie(nullptr);
     long long i,j,k,l,m,n,o,p,t,b,c[2];
       m=300;
         k=19;
@@ -56,7 +56,7 @@ int main()
           for(i=0;i<3;i++){
 
             for(j=0;j<pp(l-1+i);j++){
-                o=b-nn(a,c,j,l-1+i);
+                o=b-nn(a,c,j,l-1+i); cout<<nn(a,c,j,l-1+i)<<"\n";
                        if(o<0){o*=-1;}
                 if(p>o){ p=o; }
 
