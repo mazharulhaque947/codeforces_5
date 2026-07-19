@@ -63,7 +63,7 @@ int main()
        //  cout<<z<<"===\n";
 
           }
-          z=0; y=0; while(y<l+1){z=z*10+min(c[0],c[1]);y++;}
+          z=max(c[0],c[1]);; y=0; while(y<l){z=z*10+min(c[0],c[1]);y++;}
 
           o=b-z;
                        if(o<0){o*=-1;}
