@@ -90,18 +90,24 @@ int main()
           {
 
               z=(x+y)/2;
-
-              cout<<nn(a,c,z,l)<<"\n";
+ //cout<<z<<"\n";
+            //  cout<<nn(a,c,z,l)<<"\n";
               if(b<nn(a,c,z,l)){ y=z-1; }
-              else{ x=z; }
+             // else{ x=z; }
 
 
           }
-          for(i=x;i<=y;i++){  cout<<nn(a,c,i,l)<<"\n";if( nn(a,c,i,l)<=b){  z=i; }  }
-         // cout<<z<<" "<<nn(a,c,z,l)<<"\n";
-         o=b-nn(a,c,z,l);
+          for(i=x;i<=y;i++){  if( nn(a,c,i,l)<=b){  z=i; }
+
+
+                o=b-nn(a,c,i,l);
                        if(o<0){o*=-1;}
                 if(p>o){ p=o; }
+
+
+           }
+         // cout<<z<<" "<<nn(a,c,z,l)<<"\n";
+
          if( z+1<pp(l) ){  o=b-nn(a,c,z+1,l);
                        if(o<0){o*=-1;}
                 if(p>o){ p=o; }  }
