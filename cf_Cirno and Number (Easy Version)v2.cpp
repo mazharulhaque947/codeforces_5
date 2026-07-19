@@ -63,7 +63,9 @@ int main()
        //  cout<<z<<"===\n";
 
           }
-          z=max(c[0],c[1]);; y=0; while(y<l){z=z*10+min(c[0],c[1]);y++;}
+          z=min(c[0],c[1]);
+          if(min(c[0],c[1])==0){ z=max(c[0],c[1]);  }
+           y=0; while(y<l){z=z*10+min(c[0],c[1]);y++;}
 
           o=b-z;
                        if(o<0){o*=-1;}
@@ -72,14 +74,31 @@ int main()
 
          //cout<<z<<"===\n";
 
-
+         /*
             for(j=0;j<pp(l);j++){
                 o=b-nn(a,c,j,l);
                        if(o<0){o*=-1;}
                 if(p>o){ p=o; }
 
             }
+          */
 
+          x=0;
+          y=pp(l)-1;
+          z=0;
+          while(x+1<y)
+          {
+
+              z=(x+y)/2;
+
+              cout<<nn(a,c,j,l)<<"\n";
+              if(b>nn(a,c,j,l)){ y=z-1; }
+              else{ x=z; }
+
+
+          }
+          for(i=x;i<=y;i++){ if( nn(a,c,i,l)<=b){  z=i; }  }
+          cout<<z<<" "<<nn(a,c,z,l)<<"\n";
 
           cout<<p<<"\n";
 
