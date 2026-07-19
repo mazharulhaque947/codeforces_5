@@ -28,7 +28,7 @@ long long nn(long long a[300][20],long long  c[2],long long  i,long long l)
 }
 int main()
 {   //ios_base::sync_with_stdio(false);cin.tie(nullptr);
-    long long i,j,k,l,m,n,o,p,t,b,c[2],z,x,y,xx,yy,zz;
+    long long i,j,k,l,m,n,o,p,t,b,c[2],z,x,y,xx,yy,zz,ll;
       m=300;
         k=19;
 
@@ -86,13 +86,14 @@ int main()
           x=0;
           y=pp(l)-1;
           z=0;
+          ll=0;
           while(x<=y)
           {
-
+              if(ll>60){break ;}ll++;
               z=(x+y)/2;
  //cout<<z<<"\n";
             //  cout<<nn(a,c,z,l)<<"\n";
-              if(b<nn(a,c,z,l)){ y=z-1; }
+              if(b<=nn(a,c,z,l)){ y=z; }
               else{ x=z+1; }
 
 
@@ -101,19 +102,22 @@ int main()
            xx=0;
           yy=pp(l)-1;
           zz=0;
-          while(xx<=yy)
-          {
+          ll=0;
 
+         while(xx<=yy)
+          {
+                if(ll>60){break ;}ll++;
               zz=(xx+yy)/2;
  //cout<<z<<"\n";
             //  cout<<nn(a,c,z,l)<<"\n";
-              if(b>=nn(a,c,zz,l)){ yy=zz-1; }
-              else{ xx=zz+1; }
+              if(b>=nn(a,c,zz,l)){ xx=zz; }
+              else{ yy=zz-1; }
 
 
           }
-
-          for(i=zz;i<=z;i++){  if( nn(a,c,i,l)<=b){  z=i; }
+         // if(zz>0){zz--;}
+      //   cout<<zz<<"   hhh   "<<z<<"\n";
+          for(i=zz;i<=z;i++){  if( nn(a,c,i,l)<=b){   }
 
 
                 o=b-nn(a,c,i,l);
