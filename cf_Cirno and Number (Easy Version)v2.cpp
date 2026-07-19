@@ -23,7 +23,7 @@ long long nn(long long a[300][20],long long  c[2],long long  i,long long l)
     long long j,k,m,o;
     o=0;
 
-    for(j=0;j<l;j++){o=o*10+c[ a[i][j] ];  }
+    for(j=0;j<l;j++){o=o*10+c[ a[i][l-1-j] ];  }
     return o;
 }
 int main()
