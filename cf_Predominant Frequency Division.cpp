@@ -15,13 +15,21 @@ int main()
 
         k=0;
 
-        for(i=0;i<n-2;i++){
+         k=-1;
 
-            for(j=i+1;j<n-1;j++){   if( o[i]>=p[i]+q[i] &&  o[j]-o[i]+p[j]-p[i]>=q[j]-q[i] ){k=1; break;}  }
-            if(k==1){break;}
+            for(j=0;j<n-2;j++){   if( o[j]>=p[j]+q[j] ){k=j; break;}  }
+        m=0;
+        m=j;
+
+        if(k!=-1){
+
+            for(j=k+1;j<n-1;j++){ if(  o[j]-o[m]+p[j]-p[m]>=q[j] -q[m] ){  k=5e7; break; }  }
         }
 
-        if(k==1){cout<<"YES\n";}
+
+
+
+        if(k==5e7){cout<<"YES\n";}
         else{ cout<<"NO\n"; }
 
     }
