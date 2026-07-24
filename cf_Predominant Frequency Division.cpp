@@ -12,6 +12,7 @@ int main()
         cin>>n;
         x=y=z=0;
         for(i=0;i<n;i++){cin>>a[i]; if(a[i]==1){x++;}else if(a[i]==2){y++;}else{z++;} o[i]=x;p[i]=y;q[i]=z;  }
+
         k=0;
 
         for(i=0;i<n-2;i++){
