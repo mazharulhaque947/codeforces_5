@@ -17,7 +17,7 @@ int main()
 
         for(i=0;i<n-2;i++){
 
-            for(j=i+1;j<n-1;j++){   if( o[i]>p[i]+q[i] &&  o[j]-o[i]+p[j]-p[i]>q[j]-q[i] ){k=1; break;}  }
+            for(j=i+1;j<n-1;j++){   if( o[i]>=p[i]+q[i] &&  o[j]-o[i]+p[j]-p[i]>=q[j]-q[i] ){k=1; break;}  }
             if(k==1){break;}
         }
 
