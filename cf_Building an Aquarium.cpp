@@ -15,7 +15,7 @@ int main()
         for(i=0;i<n;i++){ k+=a[i]; b[i]=k; }
 
 
-        if(  (a[n-1]+1)*n-b[n-1]<=m ){
+        if(  (a[n-1]+0)*n-b[n-1]<=m ){
 
             l=(m+b[n-1])/n;
 
@@ -24,12 +24,12 @@ int main()
         else{
             l=0;
            for(i=0;i<n-1;i++){
-
+                 l=i;
                  y=x=a[i+1]*(i+1)-b[i];
-                 if(a[i+1]-a[i]>1){ y=(a[i]+1)*(i+1)-b[i]; }
+                 y=(a[i])*(i+1)-b[i];
 
 
-                  if(y>m){ l=i-1; break; }
+                  if(y>=m){ l=i-1; break; }
                   else if( x>=m ){break;}
            }
 
