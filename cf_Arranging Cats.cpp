@@ -17,10 +17,10 @@ int main()
         cin>>w;
 
         k=m=l=0;
-        for(i=0;i<n;i++){ if(q[i]=='1'&&w[i]=='1'){m++;} if(q[i]=='1'){k++;}   if(w[i]=='1'){l++;}  }
-       k=k-l;
-       if(k<0){k*=-1;}
-       cout<<k+l-m<<"\n";
+        for(i=0;i<n;i++){ if(q[i]==w[i]){m++;} else{if(q[i]=='1'){k++;}   if(w[i]=='1'){l++;} } }
+     //  k=k-l;
+     //  if(k<0){k*=-1;}
+       cout<<max(k,l)<<"\n";
 
     }
 
