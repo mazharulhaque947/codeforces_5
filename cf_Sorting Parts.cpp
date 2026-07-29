@@ -13,7 +13,7 @@ int main()
 
         for(i=0;i<n;i++){ cin>>a[i]; }
          k=0;l=n-1;
-        for(i=0;i<n-1;i++){ if(a[i]<a[k]){k=i;}; b[i]=a[k];    }
+        for(i=0;i<n-1;i++){ if(a[i]>a[k]){k=i;}; b[i]=a[k];    }
         for(i=n-1;i>=1;i--){ if(a[i]<a[l]){l=i;} c[i]=a[l];  }
 
         m=0;
