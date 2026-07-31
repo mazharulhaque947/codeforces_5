@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    int a[100],c[300],d[300],i,j,k,l,m,n,o,p,t,x,y,z,s;
+    int a[300],c[300],d[300],i,j,k,l,m,n,o,p,t,x,y,z,s;
     string q;
 
     cin>>t;
@@ -40,7 +40,8 @@ int main()
                    y=0;
         // cout<<x<<" c "<<l<<"\n";
         for(i=x;i<l;i+=2){ if( s+y <m){m=s+y;} if(i+1<l){s-=a[i+1];}y+=a[i];  }
-
+        s=0;
+        for(i=l-1;i>=x;i-=2){ if( s+y <m){m=s+y;} y-=a[i-1]; y+=a[i];  }
 
         }
 
