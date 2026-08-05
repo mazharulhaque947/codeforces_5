@@ -22,10 +22,11 @@ int main()
             else{ b[l]=a[p]; p=i; l++; }
             if(i==n-1){  b[l]=a[p]; l++; }
         }
-
+        o=0;
         //cout<<*upper_bound(b,b+l,l)<<"\n";
-        o=*upper_bound(b,b+l,l);
-         if(o==0){ o=b[l-1]; }
+        //o=*upper_bound(b,b+l,l);
+       if( binary_search(b,b+l,l) ==1){ o=l; } else{  o=*upper_bound(b,b+l,l);  }
+
          cout<<o<<"\n";
     }
 
