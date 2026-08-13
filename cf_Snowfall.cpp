@@ -19,8 +19,9 @@ int main()
                                     }
      for(i=0;i<o ;i++){ cout<< b[i]<<" "; }
      for(i=0;i<p ;i++){ cout<< c[i]<<" "; }
-     for(i=0;i<l ;i++){ cout<< d[i]<<" "; }
+
      for(i=0;i<z ;i++){ cout<< f[i]<<" "; }
+      for(i=0;i<l ;i++){ cout<< d[i]<<" "; }
 
        cout<<"\n";
 
