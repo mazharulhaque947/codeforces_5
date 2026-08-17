@@ -18,7 +18,7 @@ int main()
         cin>>n;
 
         l=0;
-        for(i=0;i<n;i++){ cin>>a[i];k=0; if(a[i]<0){k-a[i];}else{k+=a[i];} l+=k; }
+        for(i=0;i<n;i++){ cin>>a[i];k=0; if(a[i]<0){k-=a[i];}else{k+=a[i];} l+=k; }
 
         cout<<l<<"\n";
     }
