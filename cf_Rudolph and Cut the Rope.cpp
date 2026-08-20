@@ -16,7 +16,7 @@ int main()
         cin>>n;
         k=0;
 
-        for(i=0;i<0;i++){ cin>>a[i]>>b[i]; if(a[i]-b[i]>0){k++;} }
+        for(i=0;i<n;i++){ cin>>a[i]>>b[i]; if(a[i]-b[i]>0){k++;} }
 
         cout<<k<<"\n";
     }
