@@ -19,7 +19,7 @@ int main()
     p=0;
        if(k%2){ p=1; }
 
-       if(  (m)*7+p*11>=n ){  cout<<m+p<<"\n"; }
+       if(  (m)*7+p*11<=n ){  cout<<m+p<<"\n"; }
        else{
 
 
