@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-char a[50][51],b[50][51];
+string  a[50],b[50];
 char c;
 int i,j,k,l,m,n,o,p,t;
 cin>>t;
@@ -12,7 +12,7 @@ cin>>t;
 while(t--)
 {
 cin>>n>>m;
-for(i=0;i<n;i++){  cin>>a[i];  }
+for(i=0;i<n;i++){  cin>>a[i]; b[i]=string(100,'.'); }
 p=-1;o=0;
 for(i=0;i<n;i++){   for(j=0;j<m;j++){
 
