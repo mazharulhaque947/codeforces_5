@@ -9,7 +9,7 @@ cin>>t;
 while(t--)
 {
 cin>>n>>m;
-for(i=0;i<m;i++){  k=i/2; k%=2; a[0][i]=k-i%2;   }
+for(i=0;i<m;i++){  k=i/2; k%=2; if(k) {a[0][i]=k-i%2; }else{ a[0][i]=i%2-k; }  }
 for(i=1;i<n;i++)
 {
 for(j=0;j<m;j++){
@@ -23,7 +23,7 @@ for(j=0;j<m;j++){ cout<<a[i][j]<<" ";  }
 cout<<"\n";
 }
 
-cout<<" \n";
+//cout<<" \n";
 }
 
 return 0;
